@@ -28,12 +28,8 @@
             color: #555;
             font-size: 24px;
         }
-        .columns {
-            display: flex;
-            justify-content: space-between;
-        }
-        .column {
-            width: 48%;
+        .checklist {
+            margin-bottom: 40px;
         }
         ul {
             list-style-type: none;
@@ -53,172 +49,145 @@
             margin-top: 5px;
             display: block;
         }
-        .big-clean {
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Rhythm</h1>
-        <h2>Cleaning Checklist</h2>
-        <div class="columns">
-            <div class="column">
-                <h2>Basic Cleaning</h2>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="benchtops">
-                        <label for="benchtops">Bench tops/ desk tops wiped/dusted</label>
-                        <p>Wipe and dust all surfaces to remove dust and dirt.</p>
-                        <input type="file" class="attach-photo" id="photo-benchtops">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="bathrooms">
-                        <label for="bathrooms">Bathrooms cleaned (including warehouse toilet)</label>
-                        <p>Clean all bathroom surfaces, including toilets, sinks, and mirrors.</p>
-                        <input type="file" class="attach-photo" id="photo-bathrooms">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="toilet-paper">
-                        <label for="toilet-paper">Toilet paper and hand soap to be replenished</label>
-                        <p>Ensure all bathrooms are stocked with toilet paper and hand soap.</p>
-                        <input type="file" class="attach-photo" id="photo-toilet-paper">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="kitchen">
-                        <label for="kitchen">Kitchen cleaned</label>
-                        <p>Clean all kitchen surfaces, including countertops and sinks.</p>
-                        <input type="file" class="attach-photo" id="photo-kitchen">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="bins">
-                        <label for="bins">Bins emptied</label>
-                        <p>Empty all waste bins and replace liners.</p>
-                        <input type="file" class="attach-photo" id="photo-bins">
-                    </li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Full Cleaning List</h2>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="benchtops-full">
-                        <label for="benchtops-full">Bench tops/ desk tops wiped/dusted</label>
-                        <p>Wipe and dust all surfaces to remove dust and dirt.</p>
-                        <input type="file" class="attach-photo" id="photo-benchtops-full">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="bathrooms-full">
-                        <label for="bathrooms-full">Bathrooms cleaned (including warehouse toilet)</label>
-                        <p>Clean all bathroom surfaces, including toilets, sinks, and mirrors.</p>
-                        <input type="file" class="attach-photo" id="photo-bathrooms-full">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="toilet-paper-full">
-                        <label for="toilet-paper-full">Toilet paper and hand soap to be replenished</label>
-                        <p>Ensure all bathrooms are stocked with toilet paper and hand soap.</p>
-                        <input type="file" class="attach-photo" id="photo-toilet-paper-full">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="kitchen-full">
-                        <label for="kitchen-full">Kitchen cleaned</label>
-                        <p>Clean all kitchen surfaces, including countertops and sinks.</p>
-                        <input type="file" class="attach-photo" id="photo-kitchen-full">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="glass-plates">
-                        <label for="glass-plates">Glass and plates (if any) returned to kitchen</label>
-                        <p>Return all glassware and plates to the kitchen for cleaning.</p>
-                        <input type="file" class="attach-photo" id="photo-glass-plates">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="floors-swept">
-                        <label for="floors-swept">Floors swept/vacuumed</label>
-                        <p>Sweep or vacuum all floor surfaces to remove dirt and debris.</p>
-                        <input type="file" class="attach-photo" id="photo-floors-swept">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="floors-washed">
-                        <label for="floors-washed">Floors washed (once per week)</label>
-                        <p>Mop all floor surfaces to ensure they are clean.</p>
-                        <input type="file" class="attach-photo" id="photo-floors-washed">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="bins-full">
-                        <label for="bins-full">Bins emptied</label>
-                        <p>Empty all waste bins and replace liners.</p>
-                        <input type="file" class="attach-photo" id="photo-bins-full">
-                    </li>
-                    <li>
-                        <input type="checkbox" id="glass-doors">
-                        <label for="glass-doors">Glass on exterior doors cleaned (once per week)</label>
-                        <p>Clean the glass on all exterior doors to remove smudges and fingerprints.</p>
-                        <input type="file" class="attach-photo" id="photo-glass-doors">
-                    </li>
-                </ul>
-            </div>
+        
+        <div class="checklist">
+            <h2>Small Visit (Basic Clean)</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="benchtops-small">
+                    <label for="benchtops-small">Bench tops/ desk tops wiped/dusted</label>
+                    <input type="file" class="attach-photo" id="photo-benchtops-small">
+                </li>
+                <li>
+                    <input type="checkbox" id="bathrooms-small">
+                    <label for="bathrooms-small">Bathrooms cleaned (including warehouse toilet)</label>
+                    <input type="file" class="attach-photo" id="photo-bathrooms-small">
+                </li>
+                <li>
+                    <input type="checkbox" id="toilet-paper-small">
+                    <label for="toilet-paper-small">Toilet paper and hand soap to be replenished</label>
+                    <input type="file" class="attach-photo" id="photo-toilet-paper-small">
+                </li>
+                <li>
+                    <input type="checkbox" id="kitchen-small">
+                    <label for="kitchen-small">Kitchen cleaned</label>
+                    <input type="file" class="attach-photo" id="photo-kitchen-small">
+                </li>
+                <li>
+                    <input type="checkbox" id="bins-small">
+                    <label for="bins-small">Bins emptied</label>
+                    <input type="file" class="attach-photo" id="photo-bins-small">
+                </li>
+            </ul>
         </div>
-        <div class="big-clean">
-            <h2>Scope for the Big Monthly Clean</h2>
+        
+        <div class="checklist">
+            <h2>Big Visit (Weekly Clean)</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="benchtops-big">
+                    <label for="benchtops-big">Bench tops/ desk tops wiped/dusted</label>
+                    <input type="file" class="attach-photo" id="photo-benchtops-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="bathrooms-big">
+                    <label for="bathrooms-big">Bathrooms cleaned (including warehouse toilet)</label>
+                    <input type="file" class="attach-photo" id="photo-bathrooms-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="toilet-paper-big">
+                    <label for="toilet-paper-big">Toilet paper and hand soap to be replenished</label>
+                    <input type="file" class="attach-photo" id="photo-toilet-paper-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="kitchen-big">
+                    <label for="kitchen-big">Kitchen cleaned</label>
+                    <input type="file" class="attach-photo" id="photo-kitchen-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="glass-plates-big">
+                    <label for="glass-plates-big">Glass and plates (if any) returned to kitchen</label>
+                    <input type="file" class="attach-photo" id="photo-glass-plates-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="floors-swept-big">
+                    <label for="floors-swept-big">Floors swept/vacuumed</label>
+                    <input type="file" class="attach-photo" id="photo-floors-swept-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="floors-washed-big">
+                    <label for="floors-washed-big">Floors washed (once per week)</label>
+                    <input type="file" class="attach-photo" id="photo-floors-washed-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="bins-big">
+                    <label for="bins-big">Bins emptied</label>
+                    <input type="file" class="attach-photo" id="photo-bins-big">
+                </li>
+                <li>
+                    <input type="checkbox" id="glass-doors-big">
+                    <label for="glass-doors-big">Glass on exterior doors cleaned (once per week)</label>
+                    <input type="file" class="attach-photo" id="photo-glass-doors-big">
+                </li>
+            </ul>
+        </div>
+        
+        <div class="checklist">
+            <h2>Full Clean Visit (Monthly Deep Clean)</h2>
             <ul>
                 <li>
                     <input type="checkbox" id="dust-high">
                     <label for="dust-high">Dust high surfaces</label>
-                    <p>Dust all high surfaces including tops of shelves, cabinets, and light fixtures.</p>
                     <input type="file" class="attach-photo" id="photo-dust-high">
                 </li>
                 <li>
                     <input type="checkbox" id="clean-windows">
                     <label for="clean-windows">Clean windows inside and out</label>
-                    <p>Clean all windows both inside and outside to remove all smudges and dirt.</p>
                     <input type="file" class="attach-photo" id="photo-clean-windows">
                 </li>
                 <li>
                     <input type="checkbox" id="deep-clean-carpets">
                     <label for="deep-clean-carpets">Deep clean carpets</label>
-                    <p>Use a carpet cleaner to deep clean all carpeted areas.</p>
                     <input type="file" class="attach-photo" id="photo-deep-clean-carpets">
                 </li>
                 <li>
                     <input type="checkbox" id="sanitize-surfaces">
                     <label for="sanitize-surfaces">Sanitize all surfaces</label>
-                    <p>Thoroughly sanitize all surfaces, including desks, countertops, and touchpoints.</p>
                     <input type="file" class="attach-photo" id="photo-sanitize-surfaces">
                 </li>
                 <li>
                     <input type="checkbox" id="clean-vents">
                     <label for="clean-vents">Clean air vents</label>
-                    <p>Remove dust and debris from all air vents to ensure clean air flow.</p>
                     <input type="file" class="attach-photo" id="photo-clean-vents">
                 </li>
                 <li>
                     <input type="checkbox" id="polish-furniture">
                     <label for="polish-furniture">Polish all furniture</label>
-                    <p>Polish all wooden furniture to maintain its appearance and longevity.</p>
                     <input type="file" class="attach-photo" id="photo-polish-furniture">
                 </li>
                 <li>
                     <input type="checkbox" id="clean-appliances">
                     <label for="clean-appliances">Clean kitchen appliances</label>
-                    <p>Thoroughly clean all kitchen appliances including the fridge, microwave, and oven.</p>
                     <input type="file" class="attach-photo" id="photo-clean-appliances">
                 </li>
                 <li>
                     <input type="checkbox" id="organize-storage">
                     <label for="organize-storage">Organize storage areas</label>
-                    <p>Organize all storage areas to ensure everything is in its place and easily accessible.</p>
                     <input type="file" class="attach-photo" id="photo-organize-storage">
                 </li>
                 <li>
                     <input type="checkbox" id="clean-light-fixtures">
                     <label for="clean-light-fixtures">Clean light fixtures</label>
-                    <p>Remove dust and dirt from all light fixtures to ensure maximum brightness.</p>
                     <input type="file" class="attach-photo" id="photo-clean-light-fixtures">
                 </li>
                 <li>
                     <input type="checkbox" id="check-fire-extinguishers">
                     <label for="check-fire-extinguishers">Check fire extinguishers</label>
-                    <p>Ensure all fire extinguishers are in good working condition and easily accessible.</p>
                     <input type="file" class="attach-photo" id="photo-check-fire-extinguishers">
                 </li>
             </ul>
